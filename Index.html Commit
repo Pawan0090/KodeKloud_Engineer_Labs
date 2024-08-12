@@ -1,0 +1,27 @@
+#The Nautilus development team started with new project development. They have created different Git repositories to manage respective project's source code. One of the repo /opt/cluster.git was created recently. The team has given us a sample index.html file that is currently present on jump host under /tmp. The repository has been cloned at /usr/src/kodekloudrepos on storage server in Stratos DC.
+
+#Copy sample index.html file from jump host to storage server under cloned repository at /usr/src/kodekloudrepos, add/commit the file and push to master branch.
+
+First Step - SSH natasha@ststor01
+password - 
+sudo su 
+password- 
+
+cd /usr/src/kodekloudrepos/cluster/
+ls -ltr 
+
+cp /tmp/index.html 
+
+#now go to tmp folder is the root directory check go inside the tmp folder and check the index.html file, once u inside the tmp folder now initilize the folder 
+
+git init 
+git add index.html 
+git commit -m ".html file commited"
+
+now we need to push to origin master 
+
+git push origin master 
+
+Thank you :)
+
+
